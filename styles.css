@@ -784,8 +784,15 @@ h2 {
 .card:hover .arrow {
   background: var(--cobalt);
   border-color: var(--cobalt);
-  color: #fff;
-  transform: rotate(-45deg)
+  color: #fff
+}
+
+.card .arrow svg {
+  transition: transform .3s var(--ease)
+}
+
+.card:hover .arrow svg {
+  transform: translate(1px, -1px)
 }
 
 .card.feature .arrow {
